@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: radial-gradient(#0679d6, #020d1a);
+    font-size: 14px;
+    font-family: tahoma;
+}
+
+#wrapper{
+    height: 100vh;
+    padding-top: 120px;
+}
+
+/* FLOATING OBJECT */
+#floating_obj{
+    position: absolute;
+    top: -35px;
+    right: 0px;
+    font-size: 50px;
+    color: #017ddf;
+
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 90px;
+}
+
+.floating_obj_body{
+    position: relative;
+}
+
+.floating_obj_body .fa-star{
+    font-size: 15px;
+    top: 10px;
+    position: absolute;
+}
+/* FLOATING OBJECT */
+
+/* LOGIN FORM */
+#banner{
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    position: relative;
+    background: white;
+    width: 400px;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+#banner_header{
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.form-group{
+    margin: 15px 0px;
+}
+
+button, input{
+    padding: 10px;
+    display: block;
+    border-radius: 0px;
+    border: 1px solid #eee;
+    width: 100%;
+    font-size: 14px;
+}
+
+.form-group button{
+    background: #012653;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.form-group button:hover{
+    background: #0679d6;
+}
+
+input:focus{
+    border: 1px solid #0679d6;
+}
+
+.alert{
+    background: #c04c4c;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+/* END LOGIN FORM */
+
+/* ANIMATION */
+.text-animaton{
+    animation: textcolor 3s infinite linear;
+}
+
+@keyframes textcolor{
+
+    0%{
+        color: #0679d6;
+    }
+
+    50%{
+        color: #030d28;
+    }
+
+    100%{
+        color: #0679d2;
+    }
+
+}
+/* ANIMATON */

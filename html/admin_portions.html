@@ -1,0 +1,63 @@
+<h3>Portions</h3>
+<table class="table table-hover">
+    <!--<thead>
+        <tr>
+            <th>&nbsp;</th>
+            <th>Title</th>
+            <th>&nbsp;</th>
+        </tr>
+    </thead>-->
+    <tbody id="tbodyPortions">
+
+    </tbody>
+    <tfoot>
+        <tr>
+            <td align="left" colspan="3">
+                <button type="button" class="btn btn-sm btn-link text-success" id="btnNewPortion"><span class="fa fa-plus-circle"></span> New Portion</button>
+            </td>
+        </tr>
+    </tfoot>
+</table>
+
+
+<div class="modal fade" id="modal-portion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="sp-mode"></span> a Portion
+                <span type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="form">
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label" for="txtPortionTitle">Title</label>
+                        <div class="col-sm-9"><input type="text" class="form-control" id="txtPortionTitle"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="btnSaveChanges">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-portion-remove" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="sp-mode"><span class="fa fa-trash"></span></span>&nbsp;Remove a Portion
+                <span type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</span>
+            </div>
+            <div class="modal-body">
+                Do you really want to remove <b class="spPortionTitle"></b> portion?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                <button id="btnConfirmRemove" type="button" class="btn btn-primary">Yes</button>
+            </div>
+        </div>
+    </div>
+</div>
+

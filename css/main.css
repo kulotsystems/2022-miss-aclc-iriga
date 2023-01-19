@@ -1,0 +1,169 @@
+td, th {
+    vertical-align: middle !important;
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
+.table-borderless td, .table-borderless th {
+    border: none;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+tr.winner td {
+    background-color: yellow !important;
+}
+
+.monospace {
+    font-family: monospace !important;
+}
+
+.align-right {
+    text-align: right !important;
+}
+
+.align-center {
+    text-align: center !important;
+}
+
+td.active, th.active, tr.active {
+    background: #f6f5f5 !important;
+}
+
+.txt-rating:disabled, .txt-rating:read-only {
+    border: 0 !important;
+    background: transparent !important;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+.bg-eee {
+    background-color: #eee;
+}
+
+/* arvthumbail -->*/
+.arvthumbnail{
+    position: relative;
+    overflow: hidden;
+}
+
+.arvthumbnail img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    padding: 2px !important;
+}
+.arvthumbnail img.portrait {
+    width: 100%;
+    height: auto;
+}
+
+.arvthumbnail_250{
+    width: 333px;
+    height: 250px;
+}
+
+.arvthumbnail_180{
+    width: 240px;
+    height: 180px;
+}
+
+.arvthumbnail_150{
+    width: 200px;
+    height: 150px;
+}
+
+.arvthumbnail_120{
+    width: 160px;
+    height: 120px;
+}
+
+.arvthumbnail_80{
+    width: 107px;
+    height: 80px;
+}
+
+.arvthumbnail_80_square{
+    width: 80px;
+    height: 80px;
+}
+
+.arvthumbnail_70{
+    width: 93px;
+    height: 70px;
+}
+
+.arvthumbnail_65{
+    width: 65px;
+    height: 45px;
+}
+
+.arvthumbnail_60{
+    width: 65px;
+    height: 45px;
+}
+
+.arvthumbnail_50_square{
+    width: 50px;
+    height: 50px;
+}
+
+.arvthumbnail_50{
+    width: 50px;
+    height: 38px;
+}
+
+.arvthumbnail_40{
+    width: 40px;
+    height: 30px;
+}
+
+.arvthumbnail_40_square{
+    width: 40px;
+    height: 40px;
+}
+/* <-- arvthumbnail */
+
+/* DEFAULT IMAGE SIZE */
+.img-candidate{
+    width: 64px !important;
+}
+
+/* ANIMATION STARTS HERE */
+.tdNimation{
+    width: 64px !important;
+    cursor: pointer !important;
+    overflow: hidden !important;
+}
+
+.tdNimation img{
+    cursor: pointer !important;
+    transition: 0.15s ease-in-out !important;
+}
+
+.tdNimation img:hover{
+    transform: scale(1.8) !important;
+}
+/* ANIMATION ENDS HERE */
+
+.txt-rating-separate {
+    border: 1px solid orangered !important;
+    font-weight: bold;
+}

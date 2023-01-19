@@ -1,0 +1,108 @@
+<h3>Criteria</h3>
+<div id="divCriteria" class="row">
+
+</div>
+
+<div class="modal fade" id="modal-criteria" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="sp-mode"></span> a criteria&nbsp;<span class="sp-portion-title"></span>
+                <span type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="form">
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label" for="txtCriteriaTitle">Title</label>
+                        <div class="col-sm-9"><input type="text" class="form-control" id="txtCriteriaTitle"></div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label" for="txtCriteriaPercentage">Percentage</label>
+                        <div class="col-sm-9"><input type="number" min="0" max="100" class="form-control" id="txtCriteriaPercentage"></div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label" for="cboPortionLink">Rating From</label>
+                        <div class="col-sm-9"><select class="form-control text-primary" id="cboPortionLink"></select></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="btnSaveChanges">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-criteria-remove" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="sp-mode"><span class="fa fa-trash"></span></span>&nbsp;Remove a criteria from&nbsp;<b class="sp-portion-title"></b>
+                <span type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</span>
+            </div>
+            <div class="modal-body">
+                Do you really want to remove <b class="sp-criteria-title"></b> criteria?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                <button id="btnConfirmRemove" type="button" class="btn btn-primary">Yes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-extra-criteria" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="sp-mode"></span> an extra criteria&nbsp;<span class="sp-portion-title"></span>
+                <span type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="form">
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label" for="txtExtraCriteriaTitle">Title</label>
+                        <div class="col-sm-9"><input type="text" class="form-control" id="txtExtraCriteriaTitle"></div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label" for="txtExtraCriteriaPercentage">Percentage</label>
+                        <div class="col-sm-9"><input type="number" min="0" max="100" class="form-control" id="txtExtraCriteriaPercentage"></div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label" for="cboExtraCriteriaIsHidden">Hidden</label>
+                        <div class="col-sm-9">
+                            <select class="form-control" id="cboExtraCriteriaIsHidden">
+                                <option value="1">YES</option>
+                                <option value="0">NO</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="btnSaveChanges2">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modal-extra-criteria-remove" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="sp-mode"><span class="fa fa-trash"></span></span>&nbsp;Remove an extra criteria from&nbsp;<b class="sp-portion-title"></b>
+                <span type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</span>
+            </div>
+            <div class="modal-body">
+                Do you really want to remove <b class="sp-criteria-title"></b> extra criteria?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                <button id="btnConfirmRemove2" type="button" class="btn btn-primary">Yes</button>
+            </div>
+        </div>
+    </div>
+</div>
